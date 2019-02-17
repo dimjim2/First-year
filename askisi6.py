@@ -43,11 +43,11 @@ for j in range(0,bombs):
 					table1[luck1][luck2-1]+=1	
 			if (luck1-1>=0 and luck2-1>=0 and luck1-1<=rows-1 and luck2-1<=columns-1 and table1[luck1-1][luck2-1]!="b" ):
 				table1[luck1-1][luck2-1]+=1
-			if (luck1+1>=0 and luck2-1>=0 and luck1+1<=rows-1 and luck2-1<columns-1 and table1[luck1+1][luck2-1]!="b" ):
+			if (luck1+1>=0 and luck2-1>=0 and luck1+1<=rows-1 and luck2-1<=columns-1 and table1[luck1+1][luck2-1]!="b" ):
 				table1[luck1+1][luck2-1]+=1
 			if (luck1-1>=0 and luck2+1>=0 and luck1-1<=rows-1 and luck2+1<=columns-1 and table1[luck1-1][luck2+1]!="b"  ):
 				table1[luck1-1][luck2+1]+=1
-			if (luck1+1>=0 and luck2+1>=0 and luck1+1<=rows-1 and luck2+1<columns-1 and table1[luck1+1][luck2+1]!="b" ):
+			if (luck1+1>=0 and luck2+1>=0 and luck1+1<=rows-1 and luck2+1<=columns-1 and table1[luck1+1][luck2+1]!="b" ):
 				table1[luck1+1][luck2+1]+=1
 #now we print the table
 for xs in table1:
