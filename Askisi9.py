@@ -1,8 +1,8 @@
 #python program to find maximum contiguous subarray and its sum
 from sys import maxsize
 
-def maxSequence(a,size):
-	
+def maxSequence(a):
+	size=len(a)
 	max_so_far=-maxsize-1
 	max_ending_here=0
 	start=0
@@ -26,4 +26,4 @@ numbers=input("Enter numbers seperated by space: ").split()
 a=[int(x) for x in numbers]
 print ("You gave",a[:])
 #calling the function
-maxSequence(a,len(a))
+maxSequence(a)
