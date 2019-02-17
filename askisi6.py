@@ -20,7 +20,6 @@ bombs=int(input('Give me the number of the bombs: '))
 while (bombs<0 or bombs>rows*columns):
 	print ('The rows cannot be negative number and bombs bigger than the dimension of the table')
 	bombs=int(input('Give me the numbers of the bombs: '))
-#list1=[]
 #now we will put the bombs in the table.We take
 # care the circumstance that no multiple bombs are in the same square
 for j in range(0,bombs):
